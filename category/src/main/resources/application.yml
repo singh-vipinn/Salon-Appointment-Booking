@@ -9,7 +9,7 @@ spring:
     url: "jdbc:mysql://localhost:3306/salon_categorydb?createDatabaseIfNotExist=true"
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: $7090Ashok
+    password: V1235@sing#
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,8 +20,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: gedelashipa.1321@gmail.com
-    password: rlxz dggl spmd byfd
+    username: vipinsingh05480@gmail.com
+    password: Springboot#1235@java
     properties:
       mail:
         smtp:
