@@ -4,7 +4,7 @@ import com.vstech.domain.BookingStatus;
 import com.vstech.modal.Booking;
 import com.vstech.modal.PaymentOrder;
 import com.vstech.modal.SalonReport;
-import com.zosh.modal.*;
+import com.vstech.modal.*;
 import com.vstech.payload.dto.SalonDTO;
 import com.vstech.payload.dto.ServiceOfferingDTO;
 import com.vstech.payload.dto.UserDTO;

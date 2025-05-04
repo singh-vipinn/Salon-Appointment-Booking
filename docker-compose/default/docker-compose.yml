@@ -27,7 +27,7 @@ services:
       interval: 10s
       start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: userdb
     networks:
       - zosh
@@ -44,7 +44,7 @@ services:
       interval: 10s
       start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: salondb
     networks:
       - zosh
@@ -61,7 +61,7 @@ services:
       interval: 10s
       start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: bookingdb
     networks:
       - zosh
@@ -78,7 +78,7 @@ services:
       interval: 10s
       start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: categorydb
     networks:
       - zosh
@@ -95,7 +95,7 @@ services:
       interval: 10s
       start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: notificationdb
     networks:
       - zosh
@@ -112,7 +112,7 @@ services:
       interval: 10s
       start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: paymentdb
     networks:
       - zosh
@@ -129,7 +129,7 @@ services:
       interval: 10s
       start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: reviewdb
     networks:
       - zosh
@@ -146,7 +146,7 @@ services:
       interval: 10s
       start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: service-offeringdb
     networks:
       - zosh
@@ -237,7 +237,7 @@ services:
       #      SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"
       SPRING_DATASOURCE_URL: "jdbc:mysql://userdb:3306/userdb"
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zosh
@@ -268,7 +268,7 @@ services:
 #      SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"
       SPRING_DATASOURCE_URL: "jdbc:mysql://salondb:3306/salondb"
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zosh
@@ -299,7 +299,7 @@ services:
       #      SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"
       SPRING_DATASOURCE_URL: "jdbc:mysql://bookingdb:3306/bookingdb"
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: V1235@sing#
       SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
@@ -331,7 +331,7 @@ services:
       #      SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"
       SPRING_DATASOURCE_URL: "jdbc:mysql://categorydb:3306/categorydb"
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zosh
@@ -362,7 +362,7 @@ services:
       #      SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"
       SPRING_DATASOURCE_URL: "jdbc:mysql://notificationdb:3306/notificationdb"
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: V1235@sing#
       SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
@@ -394,7 +394,7 @@ services:
       #      SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"
       SPRING_DATASOURCE_URL: "jdbc:mysql://paymentdb:3306/paymentdb"
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: V1235@sing#
       SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
@@ -426,7 +426,7 @@ services:
       #      SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"
       SPRING_DATASOURCE_URL: "jdbc:mysql://reviewdb:3306/reviewdb"
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zosh
@@ -457,7 +457,7 @@ services:
       #      SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"
       SPRING_DATASOURCE_URL: "jdbc:mysql://service-offeringdb:3306/service-offeringdb"
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zosh
