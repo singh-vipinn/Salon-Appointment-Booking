@@ -8,7 +8,7 @@
 		<version>3.4.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.zosh</groupId>
+	<groupId>com.vstech</groupId>
 	<artifactId>category</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>category</name>
@@ -118,7 +118,7 @@
 				<version>3.4.4</version>
 				<configuration>
 					<to>
-						<image>zosh/salon-category:v1</image>
+						<image>vstech/salon-category:v1</image>
 					</to>
 				</configuration>
 			</plugin>

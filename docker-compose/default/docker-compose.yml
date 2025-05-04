@@ -13,7 +13,7 @@ services:
       retries: 10
       start_period: 5s
     networks:
-      - zosh
+      - vstech
 
   userdb:
     image: mysql
@@ -30,7 +30,7 @@ services:
       MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: userdb
     networks:
-      - zosh
+      - vstech
 
   salondb:
     image: mysql
@@ -47,7 +47,7 @@ services:
       MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: salondb
     networks:
-      - zosh
+      - vstech
 
   bookingdb:
     image: mysql
@@ -64,7 +64,7 @@ services:
       MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: bookingdb
     networks:
-      - zosh
+      - vstech
 
   categorydb:
     image: mysql
@@ -81,7 +81,7 @@ services:
       MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: categorydb
     networks:
-      - zosh
+      - vstech
 
   notificationdb:
     image: mysql
@@ -98,7 +98,7 @@ services:
       MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: notificationdb
     networks:
-      - zosh
+      - vstech
 
   paymentdb:
     image: mysql
@@ -115,7 +115,7 @@ services:
       MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: paymentdb
     networks:
-      - zosh
+      - vstech
 
   reviewdb:
     image: mysql
@@ -132,7 +132,7 @@ services:
       MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: reviewdb
     networks:
-      - zosh
+      - vstech
 
   service-offeringdb:
     image: mysql
@@ -149,7 +149,7 @@ services:
       MYSQL_ROOT_PASSWORD: V1235@sing#
       MYSQL_DATABASE: service-offeringdb
     networks:
-      - zosh
+      - vstech
 
   keycloak:
     image: quay.io/keycloak/keycloak:26.0.7
@@ -162,12 +162,12 @@ services:
     command:
       - "start-dev"
     networks:
-      - zosh
+      - vstech
 
 
 
 #  configserver:
-#    image: "zosh/configserver:v1"
+#    image: "vstech/configserver:v1"
 #    ports:
 #      - "8071:8071"
 #    healthcheck:
@@ -185,10 +185,10 @@ services:
 #        limits:
 #          memory: 700m
 #    networks:
-#      - zosh
+#      - vstech
 
   eurekaserver:
-    image: "zosh/salon-eurekaserver:v1"
+    image: "vstech/salon-eurekaserver:v1"
     ports:
       - "8070:8070"
     healthcheck:
@@ -208,11 +208,11 @@ services:
         limits:
           memory: 700m
     networks:
-      - zosh
+      - vstech
 
 
   user:
-    image: "zosh/salon-user:v1"
+    image: "vstech/salon-user:v1"
     ports:
       - "5001:5001"
     container_name: user
@@ -240,10 +240,10 @@ services:
       SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
-      - zosh
+      - vstech
 
   salon:
-    image: "zosh/salon:v1"
+    image: "vstech/salon:v1"
     ports:
       - "5002:5002"
     container_name: salon
@@ -271,10 +271,10 @@ services:
       SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
-      - zosh
+      - vstech
 
   booking:
-    image: "zosh/salon-booking:v1"
+    image: "vstech/salon-booking:v1"
     ports:
       - "5003:5003"
     container_name: booking
@@ -303,10 +303,10 @@ services:
       SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
-      - zosh
+      - vstech
 
   category:
-    image: "zosh/salon-category:v1"
+    image: "vstech/salon-category:v1"
     ports:
       - "5004:5004"
     container_name: category
@@ -334,10 +334,10 @@ services:
       SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
-      - zosh
+      - vstech
 
   notification:
-    image: "zosh/salon-notification:v1"
+    image: "vstech/salon-notification:v1"
     ports:
       - "5005:5005"
     container_name: notification
@@ -366,10 +366,10 @@ services:
       SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
-      - zosh
+      - vstech
 
   payment:
-    image: "zosh/salon-payment:v1"
+    image: "vstech/salon-payment:v1"
     ports:
       - "5006:5006"
     container_name: payment
@@ -398,10 +398,10 @@ services:
       SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
-      - zosh
+      - vstech
 
   review:
-    image: "zosh/salon-review:v1"
+    image: "vstech/salon-review:v1"
     ports:
       - "5007:5007"
     container_name: review
@@ -429,10 +429,10 @@ services:
       SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
-      - zosh
+      - vstech
 
   service-offering:
-    image: "zosh/salon-service-offering:v1"
+    image: "vstech/salon-service-offering:v1"
     ports:
       - "5008:5008"
     container_name: service-offering
@@ -460,12 +460,12 @@ services:
       SPRING_DATASOURCE_PASSWORD: V1235@sing#
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
-      - zosh
+      - vstech
 
 
 
   gatewayserver:
-    image: "zosh/salon-gatewayserver:v1"
+    image: "vstech/salon-gatewayserver:v1"
     ports:
       - "5000:5000"
     container_name: gatewayserver
@@ -487,8 +487,8 @@ services:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
       SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI: "http://keycloak:8080/realms/master/protocol/openid-connect/certs"
     networks:
-      - zosh
+      - vstech
 
 networks:
-  zosh:
+  vstech:
     driver: "bridge"

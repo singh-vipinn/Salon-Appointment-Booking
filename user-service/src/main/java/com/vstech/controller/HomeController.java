@@ -16,7 +16,7 @@ public class HomeController {
                         HttpStatus.OK)
                 .body(new ApiResponse(
 
-                        "welcome to zosh property booking system, user api"
+                        "welcome to vstech property booking system, user api"
 
 
                 ));

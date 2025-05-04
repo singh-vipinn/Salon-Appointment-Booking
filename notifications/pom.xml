@@ -8,7 +8,7 @@
 		<version>3.4.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.zosh</groupId>
+	<groupId>com.vstech</groupId>
 	<artifactId>notifications</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>notifications</name>
@@ -133,7 +133,7 @@
 				<version>3.4.4</version>
 				<configuration>
 					<to>
-						<image>zosh/salon-notification:v1</image>
+						<image>vstech/salon-notification:v1</image>
 					</to>
 				</configuration>
 			</plugin>
